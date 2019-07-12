@@ -41,7 +41,19 @@ mat-toolbar a{
   .sidenav{
     display:none;
   }
+  
 }
+@media(max-width: 961px){
+  .top-main-nav a{
+    display:block;
+  }
+  
+}
+// @media(max-width:1200px){
+//   .mat-drawer-content{
+//     display: inline-block;
+//   }
+// }
 // @media(min-width: 767px)
 // {
   
