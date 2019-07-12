@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/header/nav/nav.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProcessComponent } from './pages/process/process.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
@@ -26,6 +27,7 @@ import { ComponentsComponent } from './components/components.component';
     AppComponent,
     HeaderComponent,
     NavComponent,
+    FooterComponent,
     HomeComponent,
     ProcessComponent,
     AboutUsComponent,

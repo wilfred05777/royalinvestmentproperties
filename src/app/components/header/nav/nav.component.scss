@@ -1,17 +1,48 @@
 .sidenav-container {
   height: 100%;
+
 }
 
 .sidenav {
   width: 200px;
 }
 
+// .hidden{ 
+//   display:none;
+//   }
+
 .sidenav .mat-toolbar {
   background: inherit;
 }
 
 .mat-toolbar.mat-primary {
+  background: #2C3E50;
   position: sticky;
   top: 0;
   z-index: 1;
 }
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+span{
+  color: #fff;
+}
+
+mat-toolbar a{
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media(min-width: 768px){
+  .sidenav{
+    display:none;
+  }
+}
+// @media(min-width: 767px)
+// {
+  
+// }
