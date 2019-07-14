@@ -1,17 +1,24 @@
+// Core Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { RouterModule, Routes } from '@angular/router';
+// import { CommonModule } from  '@angular/common';
 
+// Routing
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 import { LayoutModule } from '@angular/cdk/layout';
 
 // Angular Flex-layout
-
 import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+
+// Bootstrap
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 // Angular Material Design
@@ -26,7 +33,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/header/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-// individual Pages
+// Pages components
 import { HomeComponent } from './pages/home/home.component';
 import { ProcessComponent } from './pages/process/process.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
@@ -39,6 +46,7 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
 
 @NgModule({
   declarations: [
+    // CommonModule,
     AppComponent,
     HeaderComponent,
     NavComponent,
@@ -57,6 +65,10 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
     MaterialModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    BrowserModule,
+    // BsDropdownModule.forRoot(),
+    // TooltipModule.forRoot(),
+    // ModalModule.forRoot(),
     FlexLayoutModule,
     MatToolbarModule,
     MatMenuModule,
@@ -67,6 +79,7 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
     MatListModule,
     BrowserAnimationsModule,
   ],
+  // exports: [BsDropdownModule,TooltipModule,ModalModule],
   providers: [],
   bootstrap: [AppComponent]
 })
