@@ -8,6 +8,12 @@ import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 import { LayoutModule } from '@angular/cdk/layout';
 
+// Angular Flex-layout
+
+import { MaterialModule } from './material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+
 // Angular Material Design
 import {MatCardModule} from '@angular/material/card';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
@@ -15,16 +21,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 
 // Components of the app
+import { ComponentsComponent } from './components/components.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/header/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
+
+// individual Pages
 import { HomeComponent } from './pages/home/home.component';
 import { ProcessComponent } from './pages/process/process.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { OfferFormPageComponent } from './pages/offer-form-page/offer-form-page.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
-import { ComponentsComponent } from './components/components.component';
 import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 
@@ -35,7 +43,7 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
     HeaderComponent,
     NavComponent,
     FooterComponent,
-    HomeComponent,
+    HomeComponent, 
     ProcessComponent,
     AboutUsComponent,
     FaqComponent,
@@ -46,8 +54,10 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
   ],
   imports: [
     BrowserModule,
+    MaterialModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    FlexLayoutModule,
     MatToolbarModule,
     MatMenuModule,
     MatCardModule,
