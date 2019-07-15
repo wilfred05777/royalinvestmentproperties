@@ -19,13 +19,17 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
-
+// MDB Angular
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 // Angular Material Design
 import {MatCardModule} from '@angular/material/card';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
+
+// Font Awesome
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 // Components of the app
 import { ComponentsComponent } from './components/components.component';
@@ -62,7 +66,9 @@ import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.co
   ],
   imports: [
     BrowserModule,
+    AngularFontAwesomeModule,
     MaterialModule,
+    MDBBootstrapModule.forRoot(),
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     BrowserModule,

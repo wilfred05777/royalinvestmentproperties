@@ -28,6 +28,35 @@ $RoyalInvestmentProperties-theme: mat-light-theme($RoyalInvestmentProperties-pri
 
 /* You can add global styles to this file, and also import other style files */
 
+
+
+/*=============================================
+=            Clearfix            =
+=============================================*/
+
+@mixin clearfix() {
+  &::after {
+    display: block; content: "";
+    clear: both;
+  }
+}
+// Usage as a mixin
+.element {
+   @include clearfix;
+  }
+
+/*=====  End of Clearfix  ======*/
+
+
+/*=============================================
+=            Custom Edit - Wilfred            =
+=============================================*/
+
+
+/*=====  End of Custom Edit - Wilfred  ======*/
+
+
+
 :root {
   --primary-color: #c72727;
   --secondary-color: #f99500;
@@ -44,6 +73,17 @@ $RoyalInvestmentProperties-theme: mat-light-theme($RoyalInvestmentProperties-pri
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
+// MDB Design
+.navbar{
+  background: #55557B;
+}
+.page-footer {
+  background: #151A1E;
+  opacity: 1.5%;
+}
+
+// Material Design
 mat-sidenav-container, mat-sidenav-content, mat-sidenav {
   height: 100%;
 }
@@ -54,7 +94,7 @@ mat-sidenav {
 
 a {
   text-decoration: none !important;
-  color: white;
+  color: white !important;
 }
 a:hover, a:active{
     color:lightgray;
@@ -63,6 +103,9 @@ li{
     list-style: none;
 }
 
+.enhance{
+  color: red;
+}
 
 
 /* Footer */
@@ -385,4 +428,69 @@ li{
 
 // #article .meta .category {
 //   margin-top: 0.4rem;
+// }
+
+
+
+
+/**
+ *
+ *  ++++++++++++++++++++++++++++++++++ testing ======================================
+ *
+ */
+
+// html,
+// body,
+// header,
+// .view {
+//   min-height: 100vh;
+// }
+
+// @media (max-width: 740px) {
+//   html,
+//   body,
+//   header,
+//   .view {
+//     min-height: 1000px;
+//   }
+// }
+// @media (min-width: 800px) and (max-width: 850px) {
+//   html,
+//   body,
+//   header,
+//   .view {
+//     min-height: 650px;
+//   }
+// }
+
+// .top-nav-collapse {
+//   background-color: #3f51b5 !important;
+// }
+
+// .navbar:not(.top-nav-collapse) {
+//   background: transparent !important;
+// }
+
+// @media (max-width: 991px) {
+//   .navbar:not(.top-nav-collapse) {
+//     background: #3f51b5 !important;
+//   }
+// }
+
+// .rgba-gradient {
+//   background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+//   background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%));
+//   background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+// }
+
+// .card {
+//   background-color: rgba(126, 123, 215, 0.2);
+// }
+
+// .md-form label {
+//   color: #ffffff;
+// }
+
+// h6 {
+//   line-height: 1.7;
 // }
